@@ -1,0 +1,1 @@
+/home/nicholas/.xmonad/xmonad.hs
