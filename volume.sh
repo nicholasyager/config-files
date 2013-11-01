@@ -7,6 +7,6 @@ if [ $cleanvol == '10']; then
     cleanvol=100
 fi
 
-echo Vol: $cleanvol
+echo V: $cleanvol
 
 exit 0
