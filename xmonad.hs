@@ -21,7 +21,8 @@ xmonad $ defaultConfig
         ((0, xF86XK_AudioLowerVolume), lowerVolume 4 >> return()),
         ((0, xF86XK_AudioRaiseVolume), raiseVolume 4 >> return())
     ]
-    , manageHook = manageDocks <+> manageHook defaultConfig
+    , manageHook = composeAll
+                [ className =? "Swarm.py"        --> doFloat]
     , layoutHook = avoidStruts  $  layoutHook defaultConfig
     , logHook = dynamicLogWithPP xmobarPP
                         { ppOutput = hPutStrLn xmproc
@@ -31,4 +32,6 @@ xmonad $ defaultConfig
     } `additionalKeys`
     [ ((mod4Mask .|. shiftMask, xK_z), spawn "gnome-screensaver-command --lock") --mod4mask is the windows key
     , ((0, xK_Print), spawn "gnome-screenshot")
+    , ((0, xF86XK_MonBrightnessDown), spawn "xbacklight -dec 10")
+    , ((0, xF86XK_MonBrightnessUp), spawn "xbacklight -inc 10")
     ]
