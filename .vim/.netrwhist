@@ -1,6 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/nicholas/projects/blog/_layouts'
 let g:netrw_dirhist_2='/home/nicholas/projects/blog/css'
 let g:netrw_dirhist_3='/home/nicholas/.bin'
 let g:netrw_dirhist_4='/home/nicholas/projects/blog/_posts'
+let g:netrw_dirhist_5='/home/nicholas/documents/college/2012 - 2013/Fall/BDA/PEGASYS Project - Cooper, LaFountain, McGowan, Yager'
+let g:netrw_dirhist_6='/home/nicholas/.bin'
+let g:netrw_dirhist_7='/home/nicholas/projects/airport_flu_modeling/documentation/markdown'
+let g:netrw_dirhist_8='/home/nicholas/projects/blog/_layouts'
+let g:netrw_dirhist_9='/home/nicholas/projects/correspondence/.git'
