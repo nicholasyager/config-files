@@ -3,7 +3,7 @@ Config { font = "xft:inconsolata:size=10:antialias=true"
 , bgColor = "black"
 , position = Top
 , lowerOnStart = True
-, commands = [ Run Wireless "wlp2s0" ["-t", "<essid>:<quality>"] 10
+, commands = [ Run Wireless "wlp2s0" ["-t", "<essid>:<quality>"] 10   
              , Run Com "/home/nicholas/.bin/power.sh" [] "battery" 600
              , Run Com "/home/nicholas/.bin/volume.sh" [] "vol" 10
              , Run Com "/home/nicholas/.bin/weather.py" [] "weath" 8000

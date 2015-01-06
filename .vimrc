@@ -36,3 +36,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+filetype on
+
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
