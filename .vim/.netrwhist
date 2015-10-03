@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =1
+<<<<<<< HEAD
 let g:netrw_dirhist_1='/home/nicholas/projects/omniseq/cgtapi/src/com/omniseq/cgt/cgtparse'
+=======
+let g:netrw_dirhist_1='/home/nicholas/tmp'
+>>>>>>> c3ba7ccc838af786fe35b57a2b2c817e17b59b04

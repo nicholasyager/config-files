@@ -82,3 +82,6 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 colorscheme badwolf
+filetype on
+
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
