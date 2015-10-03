@@ -3,7 +3,7 @@ vol=$(amixer get Master | awk -F'[]%[]' '/%/ {if ($7 == "off") { print "MM" } el
 
 cleanvol=$(echo $vol | tr -d '.')
 
-if [ $cleanvol == '10']; then
+if [ $cleanvol == '10' ]; then
     cleanvol=100
 fi
 

@@ -7,8 +7,10 @@
 #
 
 wmname LG3D
-feh --bg-fill pictures/aperture.jpg
+xrandr --output HDMI-0 --primary --left-of DVI-I-1
+feh --bg-center ~/pictures/wallpaper-leaves.jpg
 xsetroot -cursor_name left_ptr
+xrdb -merge "${HOME}/.Xdefaults"
 #trayer --edge top --align right --distance 225 --distancefrom right --SetDockType true --SetPartialStrut true --expand true --width 10.5 --transparent true --expand false --alpha 0 --tint 0x000000  --height 19 --monitor "primary" &
-exec xmonad
-
+exec i3
+exec dunst -conf ~/.dunstrc

@@ -3,8 +3,8 @@
 import forecastio
 
 api_key = "04cbdd6759489babcd9ea3b98a672742"
-latitude = 42.7959
-longitude = -77.8169
+latitude = 42.8307
+longitude = -78.8269
 
 forecast = forecastio.load_forecast(api_key, latitude, longitude)
 
