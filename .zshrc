@@ -5,8 +5,6 @@ function zkbd_file() {
     return 1
 }
 
-# Set RVM version
-source "$HOME/.rvm/scripts/rvm"
 
 [[ ! -d ~/.zkbd ]] && mkdir ~/.zkbd
 keyfile=$(zkbd_file)
@@ -36,15 +34,15 @@ unfunction zkbd_file; unset keyfile ret
 [[ -n "${key[PageDown]}"   ]]  && bindkey  "${key[PageDown]}" down-line-or-history
 
 alias ls='ls --color=auto'                                                      
-export PATH=$PATH:~/.gem/ruby/2.0.0/bin                                         
+export PATH=$PATH:~/.gem/ruby/2.2.0/bin                                         
 export EDITOR=vim   
 
 eval $(dircolors /home/nicholas/badwolf.dircolors)
 
 autoload -U colors && colors
 
-PROMPT="%{$fg[red]%}%n%{$reset_color%} %# "
-RPROMPT="%F{red}%1~%f"
+PROMPT="%{$fg[blue]%}%n%{$reset_color%} %# "
+RPROMPT="%F{blue}%1~%f"
 
 autoload -U promptinit
 promptinit
@@ -52,6 +50,8 @@ promptinit
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.local/bin # Add local python to PATH
+PATH=$PATH:$HOME/.cargo/bin
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -65,5 +65,5 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export GOCODE="$HOME/gocode"
+export PATH="$PATH:$HOME/.rvm/bin:${GOPATH//://bin:}/bin" # Add RVM to PATH for scripting

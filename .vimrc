@@ -79,6 +79,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'sjl/gundo.vim'
     Plug 'rking/ag.vim'
     Plug 'skammer/vim-css-color'
+    Plug 'rust-lang/rust.vim'
 call plug#end()
 
 colorscheme badwolf
